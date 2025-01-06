@@ -1319,7 +1319,7 @@ Administered annually by IIT Bombay, GATE is a prestigious examination assessing
     submitNameButton.onclick = function () {
       userName = nameInput.value;
       if (userName.trim()) {
-        addMessage(`Hi ${userName}, how can I assist you today?`, false);
+        addMessage(`Hi ${userName},`, false);
         optionsContainer.innerHTML = '';
         setTimeout(() => {
           addMessage(botDialogs[dialogIndex].question, false);
